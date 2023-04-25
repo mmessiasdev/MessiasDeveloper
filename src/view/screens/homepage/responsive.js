@@ -8,9 +8,11 @@ import { InitialButtons } from '../../components/styeles/primarybutton/style';
 import { RoundedContainer } from '../../components/styeles/roundedcontainer/style';
 import Tilt from '../../components/styeles/animatedcard';
 import { Link } from 'react-router-dom';
+import gif from '../../assets/gifs/HomePagePortfólio.gif'
 import { Blur } from '../../components/styeles/blurcontainer/style';
 import CurriculumButtom from '../../components/contents/currriculumbuttom';
 import { FaReact } from 'react-icons/fa';
+import MobilePopup from '../../components/contents/mobilepopup';
 
 
 const ResponsiveHome = () => {
@@ -33,7 +35,7 @@ const ResponsiveHome = () => {
     return (
         <>
             <Container className='mobileHome' disp='flex' direc='column' width='100%' height='100vh' justify='center' aligh='center' overflow='hidden'>
-                <Container className='homewallpaper' data-aos="zoom-out" data-aos-delay="0" data-aos-duration='2000' disp='flex' width='30%' justify='end' aligh='end' index='-10'>
+                <Container className='homewallpaper' disp='flex' width='30%' justify='end' aligh='end' index='-10'>
                     <Wallpaper className='homewallpaperImg' src={WallpaperImg} />
                 </Container>
                 <Blur width='90%' data-aos="fade-right" data-aos-delay="0" data-aos-duration='500'>
@@ -67,6 +69,8 @@ const ResponsiveHome = () => {
                     </RoundedContainer>
 
                 </Blur>
+               
+                <MobilePopup gif={gif} className="mobilePopup" data-aos="fade-up" data-aos-duration='2000' />
             </Container>
         </>
 

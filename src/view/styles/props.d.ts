@@ -20,6 +20,7 @@ declare module 'styled-components' {
         left: string,
         backcolor:string,
         mwidth: string,
-        mheight: string
+        mheight: string,
+        blur: string,
     }
 }

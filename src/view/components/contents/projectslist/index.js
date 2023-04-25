@@ -6,10 +6,10 @@ import ContentProjects from "../projects";
 import { Container } from "../../styeles/container/style";
 
 
-const ProjectsList = () => {
+const ProjectsList = ({scale}) => {
 
     const options = {
-        scale: 1.2,
+        scale: scale,
         speed: 1500,
         max: 30,
         perspective: 1000,

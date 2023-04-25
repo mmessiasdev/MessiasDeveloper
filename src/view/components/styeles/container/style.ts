@@ -19,6 +19,26 @@ export const Container = styled.div<Props>`
     background-color: ${p => p.color};
     max-width: ${p => p.mwidth};
 `
+export const ContainerBackTheme = styled.div<Props>`
+    width: ${p => p.width}; 
+    display: ${p => p.disp};
+    justify-content: ${p => p.justify};
+    align-items: ${p => p.aligh};
+    height: ${p => p.height};
+    padding: ${p => p.pad};
+    z-index: ${p => p.index};
+    flex-direction: ${p => p.direc};
+    overflow: ${p => p.overflow};
+    border-radius: ${p => p.radius};
+    position: ${p => p.posit};
+    opacity: ${p => p.opacity};
+    left: ${p => p.left};
+    margin: ${p => p.margin};
+    background-color: ${p => p.theme.colors.background};
+    background-color: ${p => p.color};
+    max-width: ${p => p.mwidth};
+    backdrop-filter: blur(${p => p.blur});
+`
 
 export const ContainerHeader = styled.div`
     height: 60px;

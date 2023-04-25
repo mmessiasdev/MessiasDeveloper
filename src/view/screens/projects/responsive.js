@@ -3,27 +3,23 @@ import { Container } from "../../components/styeles/container/style";
 import TitleScreen from "../../components/contents/title";
 import Footer from "../../components/contents/footer";
 import ProjectsList from "../../components/contents/projectslist";
+import gif from '../../assets/gifs/ProjectsPortfolio.gif'
+import MobilePopup from "../../components/contents/mobilepopup";
 
 const ResponsiveProjects = () => {
 
-    const [initPage, setInitPage] = useState(false);
-
-
-    useEffect(() => {
-        setInitPage(true);
-        setTimeout(() => {
-            setInitPage(false)
-        }, 2500)
-    }, [])
 
     return (
         <>
             <Container className="mobileProject" overflow="hidden">
                 <Container width="100%" disp="flex" direc="column" justify="center" aligh="center">
-                    <TitleScreen title={"Projects"} />
-                    <ProjectsList/>
+                    <TitleScreen title={"Projetos"} />
+                    <ProjectsList scale={1}/>
                     <Footer />
                 </Container>
+                
+                <MobilePopup gif={gif} className="mobilePopup" data-aos="fade-up" data-aos-duration='2000' />
+                
             </Container>
         </>
     );
