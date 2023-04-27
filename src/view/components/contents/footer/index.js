@@ -17,7 +17,7 @@ const Footer = () => {
 
                     </Container>
                     <Container disp="flex" pad="0px 50px" direc="column" width="30%" className="aboutName">
-                        <img height="100px" width="100px" src={Perfil} />
+                        <img height="100px" width="100px" src={Perfil} alt="description of image" />
                         <Container pad="20px 0px">
                             <h5>M. Messias</h5>
                             Developer, UI/UX designer
@@ -33,12 +33,12 @@ const Footer = () => {
                         <h4>Converse comigo</h4>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaWhatsapp />
-                            <a href="https://api.whatsapp.com/send?phone=5577991057040" target="_blank" >WhatsApp</a>
+                            <a href="https://api.whatsapp.com/send?phone=5577991057040" target="_blank" rel="noreferrer">WhatsApp</a>
 
                         </Container>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaInstagram />
-                            <a href="https://www.instagram.com/mmessiasdev/" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/mmessiasdev/" target="_blank" rel="noreferrer">Instagram</a>
                         </Container>
 
                     </Container>
@@ -46,16 +46,16 @@ const Footer = () => {
                         <h4>Meus Trabalhos</h4>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaGithub />
-                            <a href="https://github.com/mmessiasdev/" target="_blank">GitHub</a>
+                            <a href="https://github.com/mmessiasdev/" target="_blank" rel="noreferrer">GitHub</a>
 
                         </Container>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaLinkedin />
-                            <a href="https://www.linkedin.com/in/mmessiasdev/" target="_blank">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/mmessiasdev/" target="_blank" rel="noreferrer">Linkedin</a>
                         </Container>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaInstagram />
-                            <a href="https://www.instagram.com/mmessiasdev/" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/mmessiasdev/" target="_blank" rel="noreferrer">Instagram</a>
                         </Container>
 
                     </Container>
@@ -63,7 +63,7 @@ const Footer = () => {
                         <h4>Comunicação</h4>
                         <Container disp="flex" aligh="center" justify="start" pad="20px 0px 0px 0px">
                             <FaYoutube />
-                            <a href="https://www.youtube.com/channel/UCHSrdW4QVmr-CjVW3KP2FAw" target="_blank">YouTube</a>
+                            <a href="https://www.youtube.com/channel/UCHSrdW4QVmr-CjVW3KP2FAw" target="_blank" rel="noreferrer">YouTube</a>
 
                         </Container>
 
