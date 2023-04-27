@@ -14,17 +14,6 @@ import MobilePopup from '../../components/contents/mobilepopup';
 
 
 const ResponsiveHome = () => {
-    const [initPage, setInitPage] = useState(false); // eslint-disable-next-line
-    const [isShownP, setIsShownP] = useState(false); // eslint-disable-next-line
-    const [isShownS, setIsShownS] = useState(false); // eslint-disable-next-line
-
-    useEffect(() => {
-        setInitPage(true);
-        setTimeout(() => {
-            setInitPage(false)
-        }, 6000)
-    }, [])
-
     const options = {
         scale: 1.1,
         speed: 1000,
