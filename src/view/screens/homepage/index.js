@@ -62,7 +62,7 @@ const HomePage = () => {
                                     <Container disp='flex' direc='column' justify='space-between' height='100vh'>
                                         <RoundedContainer margin='120px 0px 0px 0px' radius='0px 15px 15px 0px' pad='10px 30px' aligh='center' justify='center' data-aos="fade-right" data-aos-delay="1200" data-aos-duration='1500'>
                                             <Container height='80px' disp='flex' aligh='center' justify='center'>
-                                                <CurriculumButtom title={<h2>Currículo</h2>} icon={<IoMdDocument size={30} />} route={"/curriculumlanguage"} />
+                                                <CurriculumButtom title={<h2>Currículo</h2>} icon={<IoMdDocument size={30} />} route={"/portfolio/curriculumlanguage"} />
 
                                             </Container>
 
@@ -99,7 +99,7 @@ const HomePage = () => {
 
                                 <Container className='initialbuttons' disp='flex' width='40%' justify='center' aligh='center'>
                                     <Tilt options={options}>
-                                        <Link to="/Projects">
+                                        <Link to="/portfolio/projects">
                                             <InitialButtons data-aos="fade-up" data-aos-duration='1500' top='50px' radius='40px 40px 40px 40px' index='0' onMouseEnter={() => setIsShownP(true)} onMouseLeave={() => setIsShownP(false)}>
                                                 <h2>Projetos</h2>
                                             </InitialButtons>
@@ -108,7 +108,7 @@ const HomePage = () => {
 
 
                                     <Tilt options={options}>
-                                        <Link to="/Skills">
+                                        <Link to="/portfolio/skills">
                                             <InitialButtons data-aos="fade-down" data-aos-delay="500" data-aos-duration='1000' top='-50px' radius='40px 40px 40px 40px' onMouseEnter={() => setIsShownS(true)} onMouseLeave={() => setIsShownS(false)}>
                                                 <h2>Skills</h2>
                                             </InitialButtons >
@@ -124,7 +124,7 @@ const HomePage = () => {
                         </div>
                 }
             </Container>
-            <ResponsiveHome className="mobileHome"/>
+            <ResponsiveHome/>
         </>
     );  
     

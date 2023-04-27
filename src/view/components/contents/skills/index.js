@@ -8,8 +8,6 @@ const ContentSkills = ({back, techtitle, nameimg}) => {
                 <SkillsInfo backcolor={back} pad="100px 0px 100px 0px">
                     <Container className="skillsContents" width="50%" justify="center" disp="flex" pad="0px 50px" aligh="center">
                         <TitleSkills>{techtitle}</TitleSkills>
-
-
                     </Container>
                     <Container disp="flex" aligh="center" justify="center" pad="50px">
                         <img width="50%" src={nameimg} />

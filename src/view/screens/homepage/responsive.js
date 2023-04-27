@@ -31,14 +31,14 @@ const ResponsiveHome = () => {
                     </Container>
                     <Container>
                         <Tilt options={options}>
-                            <Link to="/Projects">
+                            <Link to="/portfolio/projects">
                                 <InitialButtons data-aos="fade-up" data-aos-duration='500' data-aos-delay="500" top='50px' radius='40px 40px 40px 40px' index='0'>
                                     <h2>Projetos</h2>
                                 </InitialButtons>
                             </Link>
                         </Tilt>
                         <Tilt options={options}>
-                            <Link to="/Skills">
+                            <Link to="/portfolio/skills">
                                 <InitialButtons data-aos="fade-up" data-aos-delay="500" data-aos-duration='1000' top='-50px' radius='40px 40px 40px 40px'>
                                     <h2>Skills</h2>
                                 </InitialButtons >
@@ -48,7 +48,7 @@ const ResponsiveHome = () => {
 
                     <RoundedContainer margin='40px 0px' disp='flex' justify='center' aligh='center' radius='20px' pad='20px' data-aos="fade-up" data-aos-delay="1000" data-aos-duration='1000'>
                         <Container height='50px' disp='flex' aligh='center' justify='center'>
-                            <CurriculumButtom title={<h2>Currículo</h2>} icon={<IoMdDocument size={30} />} route={"/curriculumlanguage"} />
+                            <CurriculumButtom title={<h2>Currículo</h2>} icon={<IoMdDocument size={30} />} route={"/portfolio/curriculumlanguage"} />
 
                         </Container>
 

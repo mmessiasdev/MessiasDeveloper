@@ -18,13 +18,6 @@ const Projects = () => {
     }, 2500)
   }, [])
 
-  const options = {
-    scale: 1.2,
-    speed: 1500,
-    max: 30,
-    perspective: 1000,
-  };
-
   return (
     <>
       <Container className="desktopProject">
@@ -34,7 +27,7 @@ const Projects = () => {
           </div> :
             <Container>
               <TitleScreen title={"Projetos"} />
-              <ProjectsList/>
+              <ProjectsList scale={1.2} max={30}/>  
               <Footer />
 
             </Container>

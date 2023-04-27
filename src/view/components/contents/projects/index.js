@@ -1,8 +1,6 @@
 import { Container } from "../../styeles/container/style";
 import { ImageContButton, ProjectButton, ProjectDesc } from "../../styeles/projectbutton/style";
-// import { RiFlutterFill } from "react-icons/ri";
-// import { FaAws, FaGithub } from "react-icons/fa";
-// import { SiStrapi } from "react-icons/si";
+
 
 const ContentProjects = ({ title, desc, href, wall, icon1, icon2, icon3, icon4 }) => {
     return (

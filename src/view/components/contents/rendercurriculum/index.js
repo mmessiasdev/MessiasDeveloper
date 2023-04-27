@@ -28,7 +28,7 @@ const RenderCurriculum = ({pdf, titleFile}) => {
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = {titleFile};
+                alink.download = titleFile;
                 alink.click();
             })
         })

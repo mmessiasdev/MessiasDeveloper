@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import Projects from '../screens/projects';
 import HomePage from '../screens/homepage';
@@ -15,33 +15,33 @@ import SelectCurriculumEnglish from '../screens/curriculum/selectce';
 import Style from '../../style';
 import GlobalStyle from '../styles/global';
 
-function RoutesPage() {
 
+const NavigateRoute = () => {
+    return <Navigate to="/portfolio" />;
+}
+
+function RoutesPage() {
     return (
         <>
             <Style />
             <GlobalStyle />
             <Router history={History}>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/Projects" element={<Projects />} />
-                    <Route path="/Skills" element={<Skills />} />
-                    <Route path='/curriculumlanguage' element={<SelectLanguageCurriculum />} />
-                    <Route path="/curriculumtecnology" element={<SelectCurriculum />} />
-                    <Route path="/englishflutter" element={<FlutterEnglish />} />
-                    <Route path="/portugueseflutter" element={<FlutterPortuguese />} />
-                    <Route path="/englishreact" element={<ReactEnglish />} />
-                    <Route path="/portuguesereact" element={<ReactPortuguese />} />
-
-                    <Route path="/selectcurriculumenglish" element={<SelectCurriculumEnglish />} />
-                    <Route path="/selectcurriculumportuguese" element={<SelectCurriculumPortuguese />} />
-
-
+                    <Route path='/portfolio' element={<HomePage />} />
+                    <Route path='/portfolio/homepage' element={<HomePage />} />
+                    <Route path="/portfolio/projects" element={<Projects />} />
+                    <Route path="/portfolio/skills" element={<Skills />} />
+                    <Route path='/portfolio/curriculumlanguage' element={<SelectLanguageCurriculum />} />
+                    <Route path="/portfolio/curriculumtecnology" element={<SelectCurriculum />} />
+                    <Route path="/portfolio/englishflutter" element={<FlutterEnglish />} />
+                    <Route path="/portfolio/portugueseflutter" element={<FlutterPortuguese />} />
+                    <Route path="/portfolio/englishreact" element={<ReactEnglish />} />
+                    <Route path="/portfolio/portuguesereact" element={<ReactPortuguese />} />
+                    <Route path="/portfolio/selectcurriculumenglish" element={<SelectCurriculumEnglish />} />
+                    <Route path="/portfolio/selectcurriculumportuguese" element={<SelectCurriculumPortuguese />} />
                 </Routes>
-
             </Router>
         </>
-
     )
 }
 

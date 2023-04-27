@@ -4,8 +4,6 @@ import { shade } from 'polished';
 import { ThemeContext } from 'styled-components';
 import { Container, ContainerHeader } from '../../styeles/container/style';
 import { FaMoon } from 'react-icons/fa';
-import { RoundedContainer } from '../../styeles/roundedcontainer/style';
-import { SecudnaryButton } from '../../styeles/secundarybutton/style';
 
 
 const ThemeContainer = ({ toggleTheme }) => {
