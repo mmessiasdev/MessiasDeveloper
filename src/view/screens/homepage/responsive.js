@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import WallpaperImg from '../../assets/wallpaper.png'
 import { IoMdDocument } from 'react-icons/io';
 import { Container } from '../../components/styeles/container/style';
@@ -15,14 +14,14 @@ import MobilePopup from '../../components/contents/mobilepopup';
 
 const ResponsiveHome = () => {
     const options = {
-        scale: 1.1,
+        scale: 1,
         speed: 1000,
         max: 30,
     };
     return (
         <>
-            <Container className='mobileHome' disp='flex' direc='column' width='100%' height='100vh' justify='center' aligh='center' overflow='hidden'>
-                <Container className='homewallpaper' disp='flex' width='30%' justify='end' aligh='end' index='-10'>
+            <Container disp='flex' direc='column' width='100%' height='100vh' justify='center' aligh='center' overflow='hidden' className="mobileHome">
+                <Container className='homewallpaper' disp='flex' width='100%' justify='end' aligh='end' index='-10'>
                     <Wallpaper className='homewallpaperImg' src={WallpaperImg} />
                 </Container>
                 <Blur width='90%' data-aos="fade-right" data-aos-delay="0" data-aos-duration='500'>
@@ -33,14 +32,14 @@ const ResponsiveHome = () => {
                     <Container>
                         <Tilt options={options}>
                             <Link to="/Projects">
-                                <InitialButtons data-aos="fade-up" data-aos-duration='500' data-aos-delay="500" top='50px' radius='40px 40px 40px 40px' index='0' onMouseEnter={() => setIsShownP(true)} onMouseLeave={() => setIsShownP(false)}>
+                                <InitialButtons data-aos="fade-up" data-aos-duration='500' data-aos-delay="500" top='50px' radius='40px 40px 40px 40px' index='0'>
                                     <h2>Projetos</h2>
                                 </InitialButtons>
                             </Link>
                         </Tilt>
                         <Tilt options={options}>
                             <Link to="/Skills">
-                                <InitialButtons data-aos="fade-up" data-aos-delay="500" data-aos-duration='1000' top='-50px' radius='40px 40px 40px 40px' onMouseEnter={() => setIsShownS(true)} onMouseLeave={() => setIsShownS(false)}>
+                                <InitialButtons data-aos="fade-up" data-aos-delay="500" data-aos-duration='1000' top='-50px' radius='40px 40px 40px 40px'>
                                     <h2>Skills</h2>
                                 </InitialButtons >
                             </Link>

@@ -17,13 +17,6 @@ export default createGlobalStyle`
         background-color: ${props => props.theme.colors.background};
     }
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat';
-
-    }
     body{
         background-color: ${props => props.theme.colors.background};
         color: ${props => props.theme.colors.text};
@@ -69,9 +62,6 @@ export default createGlobalStyle`
         overflow: hidden;
         color: ${props => props.theme.colors.text};
     }
-    .desc{
-        text-align: end;    
-    }
     p{
         margin-top: 10px;
         text-align: start;
@@ -80,106 +70,7 @@ export default createGlobalStyle`
         text-decoration: none;
         color: ${props => props.theme.colors.text};
     }
-    .initialInfo{
-        animation: initialInfo 6s;
-        opacity: 0%;
-    }
-    .initialInfo img{
-        opacity: 0%;
-    }
-    .blurbuttomcont{
-        display: none;
-    }
-
-    .mobileHome{
-        display: none;
-    }
-    .mobileProject{
-        display: none;
-    }
-    .contentProjects{
-        width: 400px;
-    }
-    .skillsListMobile{
-        display: none;
-    }
     
-    
-    @media (max-width: 960px) {
-        .curriculum{
-            display: none;
-        }
-        .initialbuttons{    
-            width: 100%;
-        }
-        .homewallpaper{
-            width: 100%;
-            position: absolute;
-        }
-        .homewallpaperImg{
-            opacity: 50%;
-        }
-    }
-    @media (max-width: 750px) {
-        .initialbuttons{    
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .aboutContent{
-            display: inline;
-        }
-        .aboutName{
-            display: flex;
-            flex-direction: column;
-            padding: 0px;
-            width: 100%;
-            margin-top: 100px;
-        }
-        .aboutDesc{
-            padding: 0px;
-            width: 100%;
-        }
-        .linkContent{
-            flex-direction: column;
-            justify-content: center;
-        }
-        .linkPadding{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 25px;
-        }
-    }
-    @media (max-width: 600px) {
-        .initialbuttons{
-            display: none;
-        }
-        .blurbuttomcont{
-            display: flex;
-        }
-        .desktopHome{
-            display: none;
-        }
-        .mobileHome{
-            display: flex;
-        }
-        .desktopProject{
-            display: none;
-        }
-        .mobileProject{
-            display: flex;
-        }
-        .skillsListDesktop{
-            display: none;
-        }
-        .skillsListMobile{
-            display: inline;
-        }
-
-    }
     @media (max-width: 350px) {
         h1{
             font-size: 40px;
@@ -188,46 +79,4 @@ export default createGlobalStyle`
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    
-    @keyframes initialInfo {
-        0%{
-            opacity: 100%;
-        }
-        80%{
-            opacity: 100%;
-        }
-        95%{
-            opacity: 0%;
-        }
-        
-    }
-    @keyframes opacity {
-        0%{
-            opacity: 0%;
-            transform: scale(1);
-        }
-        3%{
-            opacity: 20%;
-        }
-        80%{
-            opacity: 20%;   
-        }
-        95%{
-            opacity: 0%;
-            transform: scale(1.5);
-
-        }
-        
-    }
 `

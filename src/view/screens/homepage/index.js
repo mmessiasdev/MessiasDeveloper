@@ -124,9 +124,9 @@ const HomePage = () => {
                         </div>
                 }
             </Container>
-            <ResponsiveHome/>
+            <ResponsiveHome className="mobileHome"/>
         </>
-    );
+    );  
     
 }
 

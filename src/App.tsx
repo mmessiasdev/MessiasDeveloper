@@ -1,4 +1,3 @@
-import GlobalStyle from './view/styles/global'
 import { ThemeProvider } from 'styled-components';
 import light from './view/styles/themes/light';
 import dark from './view/styles/themes/dark';
@@ -15,7 +14,6 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
       <ThemeContainer toggleTheme={toggleTheme} />
       <RoutesPage />
     </ThemeProvider>

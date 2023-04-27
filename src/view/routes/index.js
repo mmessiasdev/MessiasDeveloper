@@ -12,29 +12,35 @@ import ReactEnglish from '../screens/curriculum/react/english';
 import ReactPortuguese from '../screens/curriculum/react/portuguese';
 import SelectCurriculumPortuguese from '../screens/curriculum/selectcp';
 import SelectCurriculumEnglish from '../screens/curriculum/selectce';
+import Style from '../../style';
+import GlobalStyle from '../styles/global';
 
 function RoutesPage() {
 
     return (
-        <Router history={History}>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/Projects" element={<Projects />} />
-                <Route path="/Skills" element={<Skills />} />
-                <Route path='/curriculumlanguage' element={<SelectLanguageCurriculum />} />
-                <Route path="/curriculumtecnology" element={<SelectCurriculum />} />
-                <Route path="/englishflutter" element={<FlutterEnglish />} />
-                <Route path="/portugueseflutter" element={<FlutterPortuguese />} />
-                <Route path="/englishreact" element={<ReactEnglish />} />
-                <Route path="/portuguesereact" element={<ReactPortuguese />} />
+        <>
+            <Style />
+            <GlobalStyle />
+            <Router history={History}>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/Projects" element={<Projects />} />
+                    <Route path="/Skills" element={<Skills />} />
+                    <Route path='/curriculumlanguage' element={<SelectLanguageCurriculum />} />
+                    <Route path="/curriculumtecnology" element={<SelectCurriculum />} />
+                    <Route path="/englishflutter" element={<FlutterEnglish />} />
+                    <Route path="/portugueseflutter" element={<FlutterPortuguese />} />
+                    <Route path="/englishreact" element={<ReactEnglish />} />
+                    <Route path="/portuguesereact" element={<ReactPortuguese />} />
 
-                <Route path="/selectcurriculumenglish" element={<SelectCurriculumEnglish />} />
-                <Route path="/selectcurriculumportuguese" element={<SelectCurriculumPortuguese />} />
+                    <Route path="/selectcurriculumenglish" element={<SelectCurriculumEnglish />} />
+                    <Route path="/selectcurriculumportuguese" element={<SelectCurriculumPortuguese />} />
 
 
-            </Routes>
+                </Routes>
 
-        </Router>
+            </Router>
+        </>
 
     )
 }
