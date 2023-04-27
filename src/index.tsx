@@ -10,7 +10,7 @@ import '../node_modules/aos/dist/aos.css';
 AOS.init();
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root')
+  document.getElementById('root') as HTMLElement
 );
 
 root.render(

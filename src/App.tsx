@@ -15,11 +15,9 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <GlobalStyle />
-        <ThemeContainer toggleTheme={toggleTheme}/>
-        <RoutesPage/>
-      </div>
+      <GlobalStyle />
+      <ThemeContainer toggleTheme={toggleTheme} />
+      <RoutesPage />
     </ThemeProvider>
   );
 }
