@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fbc10df0.css",
-    "main.js": "/portfolio/static/js/main.cb65115b.js",
+    "main.js": "/portfolio/static/js/main.5eac6ae9.js",
     "static/media/HomePagePortfólio.gif": "/portfolio/static/media/HomePagePortfólio.8e6b08bf3c9a877ec961.gif",
     "static/media/ProjectsPortfolio.gif": "/portfolio/static/media/ProjectsPortfolio.969a610f2efa90788bd2.gif",
-    "static/media/CurriculoReact.pdf": "/portfolio/static/media/CurriculoReact.933a52c811da72f30e4a.pdf",
-    "static/media/CurriculoFlutter.pdf": "/portfolio/static/media/CurriculoFlutter.efca9389caa504920770.pdf",
-    "static/media/ReactCurriculum.pdf": "/portfolio/static/media/ReactCurriculum.11f983f0de196f2b8e42.pdf",
-    "static/media/FlutterCurriculum.pdf": "/portfolio/static/media/FlutterCurriculum.adb56911a11da60fe905.pdf",
+    "static/media/CurriculoReact.pdf": "/portfolio/static/media/CurriculoReact.3523ed150631062d6d93.pdf",
+    "static/media/CurriculoFlutter.pdf": "/portfolio/static/media/CurriculoFlutter.7ee3a2d2c928a4e41957.pdf",
+    "static/media/ReactCurriculum.pdf": "/portfolio/static/media/ReactCurriculum.beceac2514e69ede3732.pdf",
+    "static/media/FlutterCurriculum.pdf": "/portfolio/static/media/FlutterCurriculum.f00cda2da005cf75580c.pdf",
     "static/media/SkillsPortílio.gif": "/portfolio/static/media/SkillsPortílio.ff06e5a5b5caa13a9666.gif",
     "pdf.worker.js": "/portfolio/cde265b9865f3e759bd45f752b573529.js",
     "static/media/circularphoto.png": "/portfolio/static/media/circularphoto.5b49142f734879fcb2e7.png",
@@ -24,10 +24,10 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.fbc10df0.css.map": "/portfolio/static/css/main.fbc10df0.css.map",
-    "main.cb65115b.js.map": "/portfolio/static/js/main.cb65115b.js.map"
+    "main.5eac6ae9.js.map": "/portfolio/static/js/main.5eac6ae9.js.map"
   },
   "entrypoints": [
     "static/css/main.fbc10df0.css",
-    "static/js/main.cb65115b.js"
+    "static/js/main.5eac6ae9.js"
   ]
 }
