@@ -3,12 +3,17 @@ import { RoundedContainer } from "../../styeles/roundedcontainer/style";
 import { SecudnaryButton } from "../../styeles/secundarybutton/style";
 import { useState, useEffect } from "react";
 
-const MobilePopup = ({gif}) => {
+interface props{
+    gif: string;
+    className: string;
+}
+
+const MobilePopup = ({gif}: props) => {
     const [initPage, setInitPage] = useState(false);
 
     const [counter, setCounter] = useState(1);
 
-    const removeNode = (idx) => document.getElementById(`id-${idx}`).remove();
+    const removeNode = (idx: any) => document.getElementById(`id-${idx}`)!.remove() as HTMLElement | undefined;
 
     useEffect(() => {
         setInitPage(true);

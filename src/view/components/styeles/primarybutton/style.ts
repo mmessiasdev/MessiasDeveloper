@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 interface Props {
-    justify: string,
-    top: string,
-    radius: string,
-    index: string,
+    justify?: string,
+    top?: string,
+    radius?: string,
+    index?: string,
 }
 
 export const InitialButtons = styled.button<Props>`

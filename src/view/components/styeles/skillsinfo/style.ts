@@ -5,6 +5,7 @@ export const SkillsInfo = styled.div<Props>`
     margin-top: 50px;
     justify-content: center;
     display: flex;
+    width: 100%;
     align-items: center;
     padding: 0px 30px;
     transition: .5s;

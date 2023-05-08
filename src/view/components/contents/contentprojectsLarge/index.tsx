@@ -2,14 +2,24 @@ import { Container } from "../../styeles/container/style";
 import { ImageContButton, ProjectButton, ProjectDesc } from "../../styeles/projectbutton/style";
 
 
-const ContentProjects = ({ title, desc, href, wall, icon1, icon2, icon3, icon4 }) => {
+interface props{
+    title?: string;
+    desc?: string;
+    href?: string;
+    wall?: string;
+    icon1?: any;
+    icon2?: any;
+    icon3?: any;
+    icon4?: any;
+}
+
+const ContentProjectsLarge = ({ title, desc, href, wall, icon1, icon2, icon3, icon4 }: props) => {
     return (
         <>
             <ProjectButton>
                 <a href={href} target="_blank">
                     <Container width="100%"> 
                         <Container className="contentProjects" pad="0px 0px" height="200px" disp="flex" justify="space-between" aligh="center">
-
                             <Container height="100%" width="50%" disp="flex" justify="space-between" aligh="start" className="textProjects" overflow="hidden" direc="column" radius="0px 0px 0px 0px" pad="20px 20px 0px 20px">
                                 <Container disp="flex" direc="column" justify="start" aligh="start" height="150px" overflow="hidden">
                                     <h5>
@@ -59,4 +69,4 @@ const ContentProjects = ({ title, desc, href, wall, icon1, icon2, icon3, icon4 }
 
 }
 
-export default ContentProjects;
+export default ContentProjectsLarge;

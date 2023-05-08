@@ -12,6 +12,7 @@ import ScreenTransition from "../../components/contents/screentransition";
 import { useEffect, useState } from "react";
 import Footer from "../../components/contents/footer";
 import ResponsiveSkills from "./responsive";
+import Header from "../../components/contents/header";
 
 
 const Skills = () => {
@@ -34,19 +35,23 @@ const Skills = () => {
                     initPage ? <div>
                         <ScreenTransition />
                     </div> :
-                        <Container width="100%">
-                            <TitleScreen title={"Skills"} />
+                        <Container disp="flex">
+                            <Header />
+                            <Container width="100%" pad="0px 0px 0px 0px">
+                                <TitleScreen title={"Skills"} />
+                                <Container data-aos="fade-up" data-aos-delay="1000" data-aos-duration='2000' posit="absolute" width="100%" margin="100px 0px 0px 0px">
+                                    <HabilityList counticons={10} />
+                                </Container>
+                                <Container height="15vh"/>
+                                <ContentSkills back="#00D8FF" techtitle="React" nameimg={ReactImg} />
+                                <ContentSkills back="#00569E" techtitle="Flutter" nameimg={FlutterImg} />
+                                <ContentSkills back="#FAA11B" techtitle="Aws" nameimg={AwsImg} />
+                                <ContentSkills back="#ED1C24" techtitle="Adobe" nameimg={AdobeImg} />
+                                <Container pad="0px 5%">
+                                    <Footer />
+                                </Container>
 
-                            <HabilityList counticons={10} />
-
-                            <ContentSkills back="#00D8FF" techtitle="React" nameimg={ReactImg} />
-
-                            <ContentSkills back="#00569E" techtitle="Flutter" nameimg={FlutterImg} />
-
-                            <ContentSkills back="#FAA11B" techtitle="Aws" nameimg={AwsImg} />
-
-                            <ContentSkills back="#ED1C24" techtitle="Adobe" nameimg={AdobeImg} />
-                            <Footer />
+                            </Container>
 
                         </Container>
                 }

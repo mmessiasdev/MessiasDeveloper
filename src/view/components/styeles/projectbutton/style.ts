@@ -7,8 +7,9 @@ export const ProjectButton = styled.button<Props>`
     margin-top: 0px;
     display: flex;
     overflow: hidden;
+    margin-inline: 10%;
     transition: .5s;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
     width: ${p => p.width};
     cursor: pointer;
     &:hover{
@@ -28,7 +29,7 @@ export const ProjectButton = styled.button<Props>`
         color: ${p => p.theme.colors.background};
 
     }
-    @media (max-width: 480px) {
+    @media (max-width: 750px) {
         .contentProjects{
             height: 400px;
             width: 100%;

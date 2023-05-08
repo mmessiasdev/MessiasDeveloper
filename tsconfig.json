@@ -24,6 +24,8 @@
     "src"
   ],
   "files": [
-    "src/view/styles/styled.d.ts"
+    "src/view/styles/styled.d.ts",
+    "src/react-app-env.d.ts"
+
   ]
 }

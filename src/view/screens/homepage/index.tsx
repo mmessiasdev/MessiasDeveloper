@@ -11,10 +11,11 @@ import { DivFade, Wallpaper, WallpaperHover, WallpaperImage } from '../../compon
 import { InitialButtons } from '../../components/styeles/primarybutton/style';
 import { RoundedContainer } from '../../components/styeles/roundedcontainer/style';
 import Tilt from '../../components/styeles/animatedcard';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import CurriculumButtom from '../../components/contents/currriculumbuttom';
 import ResponsiveHome from './responsive';
-
+import UserGit from '../../components/contents/header';
+import Header from '../../components/contents/header';
 
 
 const HomePage = () => {
@@ -34,6 +35,7 @@ const HomePage = () => {
         speed: 1000,
         max: 30,
     };
+
 
     return (
         <>
@@ -58,46 +60,11 @@ const HomePage = () => {
                                 </WallpaperHover>
                             )}
                             <OverItens justify='space-between'>
-                                <Container className='curriculum' disp='flex' width='30%' justify='start' >
-                                    <Container disp='flex' direc='column' justify='space-between' height='100vh'>
-                                        <RoundedContainer margin='120px 0px 0px 0px' radius='0px 15px 15px 0px' pad='10px 30px' aligh='center' justify='center' data-aos="fade-right" data-aos-delay="1200" data-aos-duration='1500'>
-                                            <Container height='80px' disp='flex' aligh='center' justify='center'>
-                                                <CurriculumButtom title={<h2>Currículo</h2>} icon={<IoMdDocument size={30} />} route={"/portfolio/curriculumlanguage"} />
-
-                                            </Container>
-
-                                        </RoundedContainer>
-
-                                        <Container disp='flex' justify='space-between' aligh='center' width='200px' pad='10px 10px'>
-                                            <Tilt options={options}>
-                                                <a href='https://github.com/mmessiasdev/'  target="_blank" rel="noreferrer">
-                                                    <AiFillGithub data-aos="fade-up" data-aos-delay="1500" data-aos-duration='1000' size={30} />
-                                                </a>
-                                            </Tilt >
-                                            <Tilt options={options}>
-                                                <a href='https://www.linkedin.com/in/mmessiasdev/' target="_blank" rel="noreferrer">
-                                                    <AiFillLinkedin data-aos="fade-up" data-aos-delay="1500" data-aos-duration='1200' size={30} />
-
-                                                </a>
-                                            </Tilt>
-                                            <Tilt options={options}>
-                                                <a href='https://www.instagram.com/mmessiasdev/' target="_blank" rel="noreferrer">
-                                                    <AiFillInstagram data-aos="fade-up" data-aos-delay="1500" data-aos-duration='1400' size={30} />
-
-                                                </a>
-                                            </Tilt>
-                                            <Tilt options={options}>
-                                                <a href='https://api.whatsapp.com/send?phone=5577991057040' target="_blank" rel="noreferrer">
-                                                    <IoLogoWhatsapp data-aos="fade-up" data-aos-delay="1500" data-aos-duration='1400' size={30} />
-
-                                                </a>
-                                            </Tilt>
-                                        </Container>
-
-                                    </Container>
+                                <Container className='curriculum' disp='flex' justify='start' >
+                                    <Header/>
                                 </Container>
 
-                                <Container className='initialbuttons' disp='flex' width='40%' justify='center' aligh='center'>
+                                <Container className='initialbuttons' posit='fixed' disp='flex' width='100%' justify='center' aligh='center' index='11'>
                                     <Tilt options={options}>
                                         <Link to="/portfolio/projects">
                                             <InitialButtons data-aos="fade-up" data-aos-duration='1500' top='50px' radius='40px 40px 40px 40px' index='0' onMouseEnter={() => setIsShownP(true)} onMouseLeave={() => setIsShownP(false)}>
@@ -116,7 +83,7 @@ const HomePage = () => {
                                     </Tilt>
                                 </Container>
 
-                                <Container className='homewallpaper' data-aos="zoom-out" data-aos-delay="0" data-aos-duration='2000' disp='flex' width='30%' justify='end' aligh='end' index='-10'>
+                                <Container className='homewallpaper' data-aos="zoom-out" data-aos-delay="0" data-aos-duration='2000' disp='flex' justify='end' aligh='end' index='10'>
                                     <Wallpaper className='homewallpaperImg' src={WallpaperImg} />
                                 </Container>
                             </OverItens>
@@ -124,10 +91,10 @@ const HomePage = () => {
                         </div>
                 }
             </Container>
-            <ResponsiveHome/>
+            <ResponsiveHome />
         </>
-    );  
-    
+    );
+
 }
 
 export default HomePage;

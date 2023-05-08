@@ -16,26 +16,20 @@ const ResponsiveSkills = () => {
 
     return (
         <>
-
             <Container posit="absolute">
                 <MobilePopup gif={gif} className="mobilePopup" data-aos="fade-up" data-aos-duration='2000' />
             </Container>
             <Container className="skillsListMobile" overflow="hidden">
                 <TitleScreen title={"Skills"} />
-
-                <HabilityList counticons={3} />
-
+                <Container margin="100px 0px 0px 0px">
+                    <HabilityList counticons={3} />
+                </Container>
                 <ContentSkills back="#00D8FF" techtitle="React" nameimg={ReactImg} />
-
                 <ContentSkills back="#00569E" techtitle="Flutter" nameimg={FlutterImg} />
-
                 <ContentSkills back="#FAA11B" techtitle="Aws" nameimg={AwsImg} />
-
                 <ContentSkills back="#ED1C24" techtitle="Adobe" nameimg={AdobeImg} />
                 <Footer />
-
             </Container>
-
         </>
     );
 }

@@ -4,12 +4,11 @@ import styled, { Props } from "styled-components";
 export const OverItens = styled.div<Props>`
     display: flex;
     justify-content: ${p => p.justify};
-    position: fixed;
-    height: 100%;
     width: 100vw;
     z-index: 3;
+    overflow: hidden;
     @media (max-width: 960px) {
-        flex-direction: column;
+          width: 100vw;
     }
 `
 

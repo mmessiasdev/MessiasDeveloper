@@ -6,24 +6,28 @@ import { SiAdobe, SiAdobeaftereffects, SiOpenai } from "react-icons/si";
 import Slider from "react-slick";
 import { Container } from "../../styeles/container/style";
 
-const HabilityList = ({counticons}) => {
+interface props{
+    counticons: number;
+}
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: counticons,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 6000,
-        autoplaySpeed: 0,
-        cssEase: "linear",
-        pauseOnHover: false,
-    };
+const HabilityList = ({counticons}: props) => {
+
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     slidesToShow: counticons,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     speed: 6000,
+    //     autoplaySpeed: 0,
+    //     cssEase: "linear",
+    //     pauseOnHover: false,
+    // };
 
     return (
-        <Container pad="200px 0px 0px 0px" overflow="hidden" width="100%" data-aos="fade-up" data-aos-delay="1000" data-aos-duration='2000' >   
+   
             <div>
-                <Slider {...settings}>
+                <Slider slidesToShow={counticons} dots={false} infinite={true} slidesToScroll={1} autoplay={true} speed={6000} autoplaySpeed={0} cssEase="linear" pauseOnHover={false}>
                     <div>
                         <RiFlutterFill size={70} />
                     </div>
@@ -63,7 +67,6 @@ const HabilityList = ({counticons}) => {
                 </Slider>
             </div>
 
-        </Container>
     );
 
 }

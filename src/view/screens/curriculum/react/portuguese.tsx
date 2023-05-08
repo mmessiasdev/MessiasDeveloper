@@ -8,7 +8,7 @@ const ReactPortuguese = () => {
         <>
             <Container disp='flex' justify='center' aligh='center' direc='column' overflow='hidden'>
                 <TitleScreen title={"Currículo React"}></TitleScreen>
-                <RenderCurriculum pdf={pdf} titleFile={"M. Messias - Currículo React"}/>
+                <RenderCurriculum pdf={pdf} titleFile={"M Messias - Currículo React.pdf"}/>
             </Container>
         </>
     );

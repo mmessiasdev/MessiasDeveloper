@@ -9,7 +9,9 @@ declare module 'styled-components' {
             terciary: string,
             fourth: string,
             background: string,
+            secundaryback: string,
             text: string,
         }
     }
 }
+    

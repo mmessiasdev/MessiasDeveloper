@@ -1,4 +1,3 @@
-import CircularPhoto from '../../../assets/circularphoto.png'
 import { useEffect, useRef } from 'react'
 import Lottie from 'lottie-web';
 import screenTransition from '../../../animations/screen/data.json'

@@ -1,7 +1,6 @@
 import styled, { Props } from "styled-components";
 
 
-
 export const RoundedContainer = styled.div<Props>`
     background-color: ${p => p.theme.colors.secundary};
     width: ${p => p.width};

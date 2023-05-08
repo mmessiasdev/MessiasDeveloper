@@ -1,4 +1,4 @@
-import CircularPhoto from '../../../assets/circularphoto.png'
+import CircularPhoto from '../../../assets/circularphoto.png';
 import { useEffect, useRef } from 'react'
 import Lottie from 'lottie-web';
 import animationInitial from '../../../animations/inital/data.json'

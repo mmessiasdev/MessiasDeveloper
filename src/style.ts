@@ -15,7 +15,7 @@ export default createGlobalStyle`
     }
 
     .desc {
-        text-align: end;
+        text-align: justify;
     }
 
     .initialInfo {
@@ -54,8 +54,14 @@ export default createGlobalStyle`
 
 
     @media (max-width: 960px) {
+        .header{
+            display: none;
+        }
         .curriculum {
             display: none;
+        }
+        .sizeBannerProjGit{
+            width: 150px;
         }
 
         .initialbuttons {
@@ -79,6 +85,16 @@ export default createGlobalStyle`
             align-items: center;
             justify-content: center;
         }
+        .desktopProject {
+            display: none;
+        }
+
+        .mobileProject {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
 
         .aboutContent {
             flex-direction: column;
@@ -126,15 +142,6 @@ export default createGlobalStyle`
         .blurbuttomcont {
             display: flex;
         }
-
-        .desktopProject {
-            display: none;
-        }
-
-        .mobileProject {
-            display: flex;
-        }
-
         .skillsListDesktop {
             display: none;
         }

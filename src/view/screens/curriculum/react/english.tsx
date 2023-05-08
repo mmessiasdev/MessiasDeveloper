@@ -1,17 +1,18 @@
 import { Container } from '../../../components/styeles/container/style';
-import pdf from '../../../assets/curriculum/FlutterCurriculum.pdf';
+import pdf from '../../../assets/curriculum/ReactCurriculum.pdf';
 import TitleScreen from '../../../components/contents/title';
 import RenderCurriculum from '../../../components/contents/rendercurriculum';
 
-const FlutterEnglish = () => {
+const ReactEnglish = () => {
+
     return (
         <>
             <Container disp='flex' justify='center' aligh='center' direc='column' overflow='hidden'>
-                <TitleScreen title={"Flutter Currículum"}></TitleScreen>
-                <RenderCurriculum pdf={pdf} titleFile={"M. Messias - Flutter Curriculum"}/>
+                <TitleScreen title={"React Curriculum"}></TitleScreen>
+                <RenderCurriculum pdf={pdf} titleFile={"M Messias - React Curriculum.pdf"}/>
             </Container>
         </>
     );
 }
 
-export default FlutterEnglish;
+export default ReactEnglish;

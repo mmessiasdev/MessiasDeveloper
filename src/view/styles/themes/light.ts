@@ -6,6 +6,7 @@ export default{
         terciary: '#d6d6d6',
         fourth: '#D8F8FF',
         background: '#ffffff',
+        secundaryback: '#F4F4F4',
         text: '#000000',
     }
 }
