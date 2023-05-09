@@ -19,8 +19,6 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Container width='100%' disp='flex' justify='end'>
         <ThemeContainer toggleTheme={toggleTheme} />
-
-
       </Container>
       <RoutesPage />
     </ThemeProvider>
