@@ -1,6 +1,6 @@
 {
   "name": "messias",
-  "homepage": "/portfolio",
+  "homepage": ".",
   "version": "1.1",
   "private": true,
   "dependencies": {
