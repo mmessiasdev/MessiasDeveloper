@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fbc10df0.css",
-    "main.js": "/portfolio/static/js/main.5843c042.js",
-    "static/media/HomePagePortfólio.gif": "/portfolio/static/media/HomePagePortfólio.8e6b08bf3c9a877ec961.gif",
-    "static/media/ProjectsPortfolio.gif": "/portfolio/static/media/ProjectsPortfolio.969a610f2efa90788bd2.gif",
-    "static/media/SkillsPortílio.gif": "/portfolio/static/media/SkillsPortílio.ff06e5a5b5caa13a9666.gif",
+    "main.js": "/portfolio/static/js/main.13fa0f21.js",
+    "static/media/ProjectsPortfolio.gif": "/portfolio/static/media/ProjectsPortfolio.366e2598cf976bf5e8de.gif",
+    "static/media/HomePagePortfolio.gif": "/portfolio/static/media/HomePagePortfolio.eae7af946bd316e13d94.gif",
+    "static/media/SkillsPortfolio.gif": "/portfolio/static/media/SkillsPortfolio.af18f32e9db87a1a5232.gif",
     "pdf.worker.js": "/portfolio/cde265b9865f3e759bd45f752b573529.js",
     "static/media/CurriculoReact.pdf": "/portfolio/static/media/CurriculoReact.267cfc09da1a30ab6c6e.pdf",
     "static/media/CurriculoFlutter.pdf": "/portfolio/static/media/CurriculoFlutter.7e2d2bb72745a6d289d9.pdf",
@@ -24,10 +24,10 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.fbc10df0.css.map": "/portfolio/static/css/main.fbc10df0.css.map",
-    "main.5843c042.js.map": "/portfolio/static/js/main.5843c042.js.map"
+    "main.13fa0f21.js.map": "/portfolio/static/js/main.13fa0f21.js.map"
   },
   "entrypoints": [
     "static/css/main.fbc10df0.css",
-    "static/js/main.5843c042.js"
+    "static/js/main.13fa0f21.js"
   ]
 }
