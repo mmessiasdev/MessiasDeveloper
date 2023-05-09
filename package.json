@@ -1,7 +1,7 @@
 {
   "name": "messias",
-  "homepage": " https://mmessiasdev.github.io/portfolio/",
-  "version": "1.0",
+  "homepage": "/portfolio",
+  "version": "1.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",

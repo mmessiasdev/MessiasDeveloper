@@ -23,7 +23,8 @@ function RoutesPage() {
             <GlobalStyle />
             <Router history={History}>
                 <Routes>
-                    <Route path='/portfolio' element={<HomePage />} />
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/homepage' element={<HomePage />} />
                     <Route path='/portfolio/homepage' element={<HomePage />} />
                     <Route path="/portfolio/projects" element={<Projects />} />
                     <Route path="/portfolio/skills" element={<Skills />} />
