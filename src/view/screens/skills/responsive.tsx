@@ -8,7 +8,7 @@ import AdobeImg from '../../assets/skills/Adobe.png';
 import HabilityList from "../../components/contents/habilitylist";
 import Footer from "../../components/contents/footer";
 import MobilePopup from "../../components/contents/mobilepopup";
-import gif from '../../assets/gifs/SkillsPortílio.gif'
+import gif from '../../assets/gifs/SkillsPortfolio.gif'
 
 
 

@@ -6,7 +6,7 @@ import { InitialButtons } from '../../components/styeles/primarybutton/style';
 import { RoundedContainer } from '../../components/styeles/roundedcontainer/style';
 import Tilt from '../../components/styeles/animatedcard';
 import { Link } from 'react-router-dom';
-import gif from '../../assets/gifs/HomePagePortfólio.gif'
+import gif from '../../assets/gifs/HomePagePortfolio.gif'
 import { Blur } from '../../components/styeles/blurcontainer/style';
 import CurriculumButtom from '../../components/contents/currriculumbuttom';
 import MobilePopup from '../../components/contents/mobilepopup';

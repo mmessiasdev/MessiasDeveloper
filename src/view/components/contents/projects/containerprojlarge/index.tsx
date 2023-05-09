@@ -1,7 +1,4 @@
 import { Container } from "../../../styeles/container/style";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
 import { RoundedContainer } from "../../../styeles/roundedcontainer/style";
 import { SecudnaryButton } from "../../../styeles/secundarybutton/style";
 import { FaGithub } from "react-icons/fa";
@@ -55,7 +52,7 @@ const ContainerProjectLarge = ({ icon1, icon2, icon3, icon4, title, desc, href, 
                         </a>
                     </Container>
                 </Container>
-                <Container disp="flex" width="35%" justify="end" radius="35px" overflow="hidden">
+                <Container disp="flex" width="35%" opacity="50%" justify="end" radius="35px" overflow="hidden">
                     <img width="100%" src={wall} />
                 </Container>
             </Container>

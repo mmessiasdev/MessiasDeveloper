@@ -17,7 +17,7 @@ const ContentProjects = ({ title, desc, href, wall, icon1, icon2, icon3, icon4 }
     return (
         <>
             <ProjectButton data-aos="fade" data-aos-delay="500" data-aos-duration='2000'>
-                <a href={href} target="_blank">
+                <a href={href} target="_blank"> 
                     <Container > 
                         <Container className="contentProjects" pad="0px 0px" height="150px" disp="flex" justify="space-between" aligh="center" >
                             <Container height="100%" width="50%" disp="flex" justify="space-between" aligh="start" className="textProjects" overflow="hidden" direc="column" radius="0px 0px 0px 0px" pad="20px 20px 0px 20px">

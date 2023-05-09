@@ -13,7 +13,7 @@ const InitialAnimation = () => {
         Lottie.loadAnimation({
             container: container.current,
             renderer: 'svg',
-            loop: false,
+            loop: false,    
             autoplay: true,
             animationData: animationInitial,
         })
